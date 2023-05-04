@@ -20,7 +20,7 @@ var localServiceUrl = dynamoDbConfig.GetValue<string>("LocalServiceUrl");
 var endpointUri= dynamoDbConfig.GetValue<string>("EndpointUri");
 var credentials = new BasicAWSCredentials(accessKey, secretKey);
 
-var clientConfig = new DaxClientConfig("daxcluster.xgknlg.dax-clusters.eu-west-1.amazonaws.com",9111)
+var clientConfig = new DaxClientConfig("**",9111)
 {
     AwsCredentials = FallbackCredentialsFactory.GetCredentials()
 };
